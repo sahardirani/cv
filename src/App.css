@@ -19,6 +19,15 @@
     letter-spacing: 1px; /* Add letter spacing for better readability */
   }
   
+  @media (max-width: 767px) {
+    .h1-design {
+      font-size: 1.8rem; /* Decrease font size for smaller screens */
+      padding-bottom: 8px; /* Adjust padding for smaller screens */
+      margin-bottom: 15px; /* Adjust margin for smaller screens */
+      letter-spacing: 0.5px; /* Adjust letter spacing for smaller screens */
+    }
+  }
+
   .h1-design:hover {
     color: #6643b5;   
   }
@@ -26,4 +35,5 @@
   html {
     scroll-behavior: smooth;
   }
+  
   

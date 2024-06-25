@@ -56,3 +56,20 @@
 .info-icon:hover {
   color: #2a2f4a;
 }
+
+@media (max-width: 767px) {
+  .title {
+    margin-left: 20px;/* Adjusted font size for smaller screens */
+  }
+
+  .contact-button {
+    padding: 6px 12px; /* Adjusted padding for smaller screens */
+    margin-right: 10px; /* Further reduced margin for smaller screens */
+    font-size: 12px; /* Adjusted font size for smaller screens */
+  }
+
+  .info-icon {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    margin-right: 10px; /* Further reduced margin for smaller screens */
+  }
+}

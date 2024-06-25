@@ -24,3 +24,22 @@
   .skill-title {
     font-size: 18px;
   }
+
+  @media (max-width: 767px) {
+    .skills-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .skills-grid {
+      padding-inline: 10px; /* Adjust horizontal padding */
+    }
+  
+    .skill-item {
+      flex-basis: calc(20% - 20px); /* Two items per row, with spacing */
+      max-width: calc(20% ); /* Limit maximum width for smaller screens */
+    }
+  
+    .skill-title {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  }

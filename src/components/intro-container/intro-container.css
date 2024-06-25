@@ -9,7 +9,7 @@
 }
 
 .content {
-  color: #113f67; 
+  color: #113f67;
   display: flex;
   width: 100%;
 }
@@ -18,13 +18,13 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start of the container */
+  align-items: flex-start;
   flex: 1;
   padding-left: 80px;
   margin-right: 30px;
 }
 
-.left-content p{
+.left-content p {
   margin-right: 150px;
 }
 
@@ -48,14 +48,13 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #6643b5;  
+  color: #6643b5;
   font-weight: bold !important;
   letter-spacing: 7px !important;
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
-  animation: typewriter 2s steps(20) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
+  animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms infinite;
 }
 
 @keyframes typewriter {
@@ -83,7 +82,7 @@
 }
 
 .cv-button {
-  background-color: #113f67; 
+  background-color: #113f67;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -92,11 +91,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 20px;
-  align-self: flex-start; /* Align button to the start of its container */
+  align-self: flex-start;
 }
 
 .cv-button:hover {
-  background-color: #38598b; /* Darker shade for hover effect */
+  background-color: #38598b;
 }
 
 .social-media {
@@ -110,17 +109,17 @@
   font-size: 36px;
   margin: 0 10px;
   text-decoration: none;
-  color:   #6643b5; 
+  color: #6643b5;
 }
 
 .social-media .icon:hover {
-  color:#38598b; 
+  color: #38598b;
 }
 
-.button-div{
+.button-div {
   align-items: center;
 }
 
-.h1-intro{
+.h1-intro {
   font-size: 45px;
 }

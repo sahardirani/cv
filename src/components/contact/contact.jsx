@@ -1,6 +1,5 @@
-// Contact.js
-
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./contact.css";
 
 function Contact() {
@@ -18,37 +17,30 @@ function Contact() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
+    emailjs.send(
+      'service_1mizwnx',
+      'template_v5j8kwd',
+      formData,
+      'fdviwo9P2lRjsjuxw'
+    ).then((response) => {
+      console.log("Email sent successfully!", response.status, response.text);
+      alert("Email sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
       });
-      if (response.ok) {
-        console.log("Email sent successfully!");
-        alert("Email sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          message: ""
-        });
-      } else {
-        console.error("Failed to send email:", response.statusText);
-        alert("Failed to send email. Please try again later.");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      alert("Error sending email. Please try again later.");
-    }
+    }).catch((error) => {
+      console.error("Failed to send email:", error);
+      alert("Failed to send email. Please try again later.");
+    });
   };
 
   return (
     <div className="contact-container">
-      <h1 className="h1-contact">Lets Get In Touch</h1>
+      <h1 className="h1-contact">Let's Get In Touch</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input

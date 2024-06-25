@@ -43,7 +43,6 @@ textarea {
 }
 
 textarea {
-  color: #e7eaf6; 
   resize: vertical;
 }
 
@@ -65,4 +64,20 @@ button[type="submit"]:hover {
 .h1-contact{
   text-align: center;
   color: #dbdce5;
+}
+
+@media (max-width: 767px) {
+  .contact-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .contact-container form {
+    margin-left: 10px; /* Adjust left margin for smaller screens */
+    margin-right: 10px; /* Adjust right margin for smaller screens */
+  }
+
+  .h1-design {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
 }

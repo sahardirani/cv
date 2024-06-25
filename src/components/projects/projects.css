@@ -76,3 +76,13 @@
 .project-details a {
   color: white;
 }
+
+@media (max-width: 767px) {
+  .project-card {
+    width: calc(100% - 40px); /* Full width for smaller screens */
+  }
+
+  .project-image-overlay {
+    height: 100%; /* Adjusted height for overlay on smaller screens */
+  }
+}

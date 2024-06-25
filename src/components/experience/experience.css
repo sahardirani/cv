@@ -57,3 +57,11 @@
     font-style: oblique;
     color: rgb(113, 113, 113);
   }
+
+  @media (max-width: 767px) {
+    .experience-item {
+      width: calc(100% - 40px); /* Full width for smaller screens */
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
