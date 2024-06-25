@@ -1,0 +1,27 @@
+
+.education-container {
+    padding: 0 20px;
+    color: #2a2f52;
+  }
+  
+  .education-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  
+  .education-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .education-table td:first-child {
+    font-weight: bold;
+    width: 50%;
+  }
+  

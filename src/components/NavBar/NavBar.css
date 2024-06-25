@@ -1,0 +1,58 @@
+.navbar {
+  color: #f2e9e4;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  position: fixed;
+  background: #e7eaf6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* border: 1px solid #2a2f4a; */
+}
+
+.title {
+  flex: 1;
+  margin-left: 50px;
+  font-size: xx-large;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor tag */
+  background: linear-gradient(to bottom right, #6643b5, #113f67); /* Gradient background */
+  -webkit-background-clip: text; /* Clip the background to the text for Safari/Chrome */
+  background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text transparent */
+}
+
+.title:hover {
+  color: #38598b; 
+}
+
+.contact-button {
+  background: linear-gradient(to bottom right, #6643b5, #113f67); /* Gradient background */
+  color: #f2e9e4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 50px;
+  cursor: pointer;
+  text-decoration: none; 
+  font-size: 16px;
+}
+
+.contact-button:hover {
+  background-color:#38598b;
+}
+
+.info-icon {
+  font-size: 50px;
+  margin-right: 50px;
+  color: #38598b; 
+  cursor: pointer;
+}
+
+.info-icon:hover {
+  color: #2a2f4a;
+}

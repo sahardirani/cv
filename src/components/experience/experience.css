@@ -1,0 +1,59 @@
+.experience-container {
+    padding: 0 20px;
+    color: #38598b; 
+  }
+  
+  .experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .experience-item {
+    width: calc(40% - 70px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    padding: 20px; 
+    box-sizing: border-box;
+    border: 2px solid #4a4e69;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px;
+  }
+  
+  .experience-header h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0; 
+    text-align: center;
+    color: #6643b5; 
+  }
+  
+  .experience-header p {
+    font-size: 16px;
+    font-style: italic;
+    color: #ccc; /* Adjusted color for subtitle */
+    margin: 0; /* Remove margin to prevent extra space */
+  }
+  
+  .experience-list {
+    padding: 0;
+    margin-top: 10px; /* Added margin-top for spacing between header and list */
+  }
+  
+  .experience-list li {
+    line-height: 1.6;
+  }
+  
+  .grey{
+    font-style: oblique;
+    color: rgb(113, 113, 113);
+  }

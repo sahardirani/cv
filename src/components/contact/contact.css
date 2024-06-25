@@ -1,0 +1,68 @@
+.contact-container {
+  padding: 10px 20px; 
+  background: linear-gradient(to bottom right, #6643b5, #113f67); /* Gradient background */
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+
+.contact-container form {
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.h1-design {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f8f6ee;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  
+  background: #e7eaf6; 
+  
+}
+
+textarea {
+  color: #e7eaf6; 
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #e7eaf6; 
+  color: #6643b5;  
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #cbcee0;
+}
+
+.h1-contact{
+  text-align: center;
+  color: #dbdce5;
+}
