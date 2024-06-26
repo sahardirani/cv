@@ -26,7 +26,7 @@ function NavBar({ onContactClick, onPortfolioClick }) {
       <h1 className="title" onClick={onPortfolioClick}>
         <span className="portfolio-text">Portfolio</span>
       </h1>
-      <a href="/my-cv.pdf" className="contact-button" download="Sahar-Dirani-CV.pdf">My CV</a>
+      <a href="https://drive.google.com/file/d/1egQU1P0BGALt7RRmc-ZO6okPw2l2mCZQ/view?usp=sharing" className="contact-button" target="_blank" rel="noopener noreferrer">My CV</a>
       <button className="contact-button" onClick={onContactClick}>Contact Me</button>
     </nav>
   );
