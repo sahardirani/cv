@@ -4,8 +4,8 @@ import "./contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: ""
   });
 
@@ -17,8 +17,7 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  function sendEmail() {
     emailjs.send(
       'service_1mizwnx',
       'template_v5j8kwd',
@@ -28,15 +27,20 @@ function Contact() {
       console.log("Email sent successfully!", response.status, response.text);
       alert("Email sent successfully!");
       setFormData({
-        name: "",
-        email: "",
+        from_name: "",
+        from_email: "",
         message: ""
       });
     }).catch((error) => {
       console.error("Failed to send email:", error);
       alert("Failed to send email. Please try again later.");
     });
-  };
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail();
+  }
 
   return (
     <div className="contact-container">
@@ -45,9 +49,9 @@ function Contact() {
         <div className="form-group">
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="from_name"
+            name="from_name"
+            value={formData.from_name}
             onChange={handleChange}
             placeholder="Enter your full name"
             required
@@ -56,9 +60,9 @@ function Contact() {
         <div className="form-group">
           <input
             type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            id="from_email"
+            name="from_email"
+            value={formData.from_email}
             onChange={handleChange}
             placeholder="Enter your email address"
             required

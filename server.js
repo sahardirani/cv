@@ -1,8 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
-
-require("dotenv").config(); // Load environment variables from .env file
+require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -22,22 +21,22 @@ app.use((req, res, next) => {
 });
 
 app.post("/send-email", (req, res) => {
-  const { name, email, message } = req.body;
+  const { from_name, from_email, message } = req.body;
 
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER, // Use environment variable
-      pass: process.env.EMAIL_PASS, // Use environment variable
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   let mailOptions = {
-    from: process.env.EMAIL_USER, // sender address
-    to: "sahardirani2004@gmail.com", // recipient
-    subject: `New Contact Message from ${name}`, // Subject line
-    text: message, // plain text body
-    html: `<p>${message}</p>`, // html body (if you want to send HTML formatted emails)
+    from: process.env.EMAIL_USER,
+    to: "sahardirani2004@gmail.com",
+    subject: `New Contact Message from ${from_name}`,
+    text: `You got a new message from ${from_name} (${from_email}):\n\n${message}`,
+    html: `<p>You got a new message from ${from_name} (${from_email}):</p><p>${message}</p>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
