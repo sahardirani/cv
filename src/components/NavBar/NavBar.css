@@ -17,7 +17,7 @@
 .title {
   flex: 1;
   margin-left: 50px;
-  font-size: xx-large;
+  font-size: 40px;
   cursor: pointer;
   text-decoration: none; /* Remove underline from anchor tag */
   background: linear-gradient(to bottom right, #6643b5, #113f67); /* Gradient background */
@@ -59,6 +59,7 @@
 
 @media (max-width: 767px) {
   .title {
+    font-size: 30px;
     margin-left: 20px;/* Adjusted font size for smaller screens */
   }
 
